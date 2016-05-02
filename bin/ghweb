@@ -10,5 +10,9 @@ if(! git remote >[2] /dev/null | 9 grep origin > /dev/null) {
 	exit origin
 }
 
-repo=`{git remote get-url origin | 9 sed 's,.+?:(.+?/.+?)\..+,\1,'}
-9 web 'https://github.com/'$repo'/issues/'$1
+# remote formats:
+#   https://hostname/user/repo.git
+#   git@hostname:user/repo.git
+
+repo=`{git remote get-url origin | 9 sed 's,^.+?(://|@)(.+?/.+?)(\.git)?.+?$,\2,' | 9 sed 's,:,/,'}
+9 web 'https://'$repo'/issues/'$1
