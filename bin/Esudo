@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# chmod file and run B, but then wait for the file to change.
+# chmod file and run B, then wait for the file to change.
 # the notion of a file changing is a little weak.
 
 sudo chmod o+w "$@"
