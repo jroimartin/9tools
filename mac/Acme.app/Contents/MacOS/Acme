@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd $HOME
+
+. ~/.bash_profile
+PLAN9=${PLAN9:-/usr/local/plan9}
+
+export TERM=dumb
+export PAGER=nobs
+export SHELL=rc
+
+killall plumber
+plumber
+
+$PLAN9/bin/acme -a &
