@@ -7,9 +7,9 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.swtch.plan9port.Acme</string>
 	<key>CFBundleVersion</key>
-	<string>0.1</string>
+	<string>1</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1</string>
+	<string>1</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleSignature</key>

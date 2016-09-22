@@ -1,15 +1,15 @@
 #!/bin/bash
 
-cd $HOME
-
 . ~/.bash_profile
-PLAN9=${PLAN9:-/usr/local/plan9}
-
+export PLAN9=${PLAN9:-/usr/local/plan9}
 export TERM=dumb
 export PAGER=nobs
 export SHELL=rc
 
-killall plumber
-plumber
+varfont=/lib/font/bit/lucsans/euro.8.font,/mnt/font/LucidaGrande/25a/font
+fixfont=/usr/local/plan9/font/pelm/unicode.9.font,/mnt/font/Menlo-Regular/25a/font
 
-$PLAN9/bin/acme -a &
+cd $HOME
+killall plumber
+plumber &
+$PLAN9/bin/acme -a -f $varfont -F $fixfont &
