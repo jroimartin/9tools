@@ -10,8 +10,7 @@ TERM=dumb export TERM
 PAGER=nobs export PAGER
 SHELL=rc export SHELL
 
-killall plumber
-$PLAN9/bin/plumber &
+pgrep -q plumber || $PLAN9/bin/plumber &
 
 $PLAN9/bin/acme -a \
 	-f /lib/font/bit/lucsans/euro.8.font,/mnt/font/LucidaGrande/25a/font \
