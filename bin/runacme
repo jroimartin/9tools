@@ -1,0 +1,11 @@
+#!/usr/bin/env rc
+
+TERM=dumb
+PAGER=nobs
+SHELL=rc
+EDITOR=E
+
+if (! 9 ps | 9 grep plumber >/dev/null) 9 plumber
+if (! 9 ps | 9 grep fontsrv >/dev/null) 9 fontsrv &
+
+9 acme -a
