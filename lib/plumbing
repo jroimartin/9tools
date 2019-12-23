@@ -12,10 +12,5 @@ type	is	text
 data	matches	'commit ([a-zA-Z0-9]+)'
 plumb	start	rc -c 'cd '$wdir' && git show '$1' | plumb -i -d edit -a ''action=showdata filename=/git/'$1''''
 
-# github
-type	is	text
-data	matches	'(issue|pr) #([0-9]+)'
-plumb	start rc -c 'cd '$wdir' && ghweb '$2
-
 # include basic plumbing rules
 include basic
