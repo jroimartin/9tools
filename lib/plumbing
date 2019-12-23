@@ -1,12 +1,6 @@
 # More info: /usr/local/plan9/plumb
 editor = acme
 
-# Google
-type	is	text
-data	matches	'google:([a-zA-Z0-9+]+)'
-plumb	to	web
-plumb	start	web https://www.google.com/search?q=$1
-
 # git
 type	is	text
 data	matches	'commit ([a-zA-Z0-9]+)'
