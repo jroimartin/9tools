@@ -4,7 +4,7 @@ Tools I use with [p9p](https://github.com/9fans/plan9port).
 
 ## Dependencies
 
-- **editinacme**: github.com/9fans/go/acme/editinacme
+- **editinacme**: 9fans.net/go/acme/editinacme
 
 ## Resources
 
