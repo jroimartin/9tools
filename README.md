@@ -4,7 +4,13 @@ Tools I use with [p9p](https://github.com/9fans/plan9port).
 
 ## Dependencies
 
-- **editinacme**: 9fans.net/go/acme/editinacme
+- editinacme: 9fans.net/go/acme/editinacme
+
+## Tips
+
+### Acme
+
+- Delete all text in window: `Edit ,d`
 
 ## Resources
 
