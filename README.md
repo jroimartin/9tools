@@ -11,6 +11,13 @@ Tools I use with [p9p](https://github.com/9fans/plan9port).
 ### Acme
 
 - Delete all text in window: `Edit ,d`
+- Search and replace:
+	- All: `Edit ,x/old/c/new/`
+	- Selection: `Edit x/old/c/new/`
+	- Next: `Edit /old/c/new/`
+- Big font:
+	- Fixed width: `Font /mnt/font/LiberationMono/18a/font`
+	- Proportional width: `Font /mnt/font/LiberationSans/18a/font`
 
 ## Resources
 
