@@ -16,8 +16,8 @@ Tools I use with [p9p](https://github.com/9fans/plan9port).
 	- Selection: `Edit x/old/c/new/`
 	- Next: `Edit /old/c/new/`
 - Big font:
-	- Fixed width: `Font /mnt/font/LiberationMono/18a/font`
 	- Proportional width: `Font /mnt/font/LiberationSans/18a/font`
+	- Fixed width: `Font /mnt/font/LiberationMono/18a/font`
 
 ## Resources
 
