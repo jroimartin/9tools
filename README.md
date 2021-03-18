@@ -19,6 +19,10 @@ Tools I use with [p9p](https://github.com/9fans/plan9port).
 	- Proportional width: `Font /mnt/font/LiberationSans/18a/font`
 	- Fixed width: `Font /mnt/font/LiberationMono/18a/font`
 
+### Common
+
+- Format text to `n` columns: `| 9 fmt -j -w n`
+
 ## Resources
 
 Interesting links about using Acme, Sam and other plan9 programs:
