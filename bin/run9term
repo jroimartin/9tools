@@ -8,4 +8,4 @@ EDITOR=editinacme
 if(! 9 ps | 9 grep plumber >/dev/null) 9 plumber
 if(! 9 ps | 9 grep fontsrv >/dev/null) 9 fontsrv &
 
-9term
+9term -f /mnt/font/GoMono/11a/font
