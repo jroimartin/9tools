@@ -1,9 +1,20 @@
 #!/usr/bin/env rc
 
+switch($#*) {
+	case 0
+		hidpi=0
+	case 1
+		hidpi=$1
+	case *
+		echo 'usage F+ [hidpi]' >[1=2]
+		exit 1
+}
+
 ctl=`{9p read acme/$winid/ctl}
 
 size=`{echo $ctl | 9 sed 's,.*/mnt/font/.+/([0-9]+)a?/font.*,\1,'}
-size=`{echo $size + 1 | 9 bc}
+if(! ~ $hidpi 0 && ! ~ $hidpi false) size=`{echo $size/2 | 9 bc}
+size=`{echo $size+1 | 9 bc}
 
 font=`{echo $ctl | 9 sed 's,.*(/mnt/font/.+/)[0-9]+(a?/font).*,\1'$size'\2,'}
 echo font $font | 9p write acme/$winid/ctl
