@@ -5,7 +5,7 @@ Tools I use with [p9p](https://github.com/9fans/plan9port).
 ## Dependencies
 
 - editinacme: `go install 9fans.net/go/acme/editinacme@latest`
-- [Go fonts](https://go.googlesource.com/image/+/6944b10bf41077a939a283aba62be2c1a676d8ef/font/gofont/ttfs/)
+- [Go fonts](https://go.dev/blog/go-fonts)
 
 ## Tips
 
