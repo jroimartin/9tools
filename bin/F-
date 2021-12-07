@@ -6,7 +6,7 @@ switch($#*) {
 	case 1
 		hidpi=$1
 	case *
-		echo 'usage F+ [hidpi]' >[1=2]
+		echo 'usage F- [hidpi]' >[1=2]
 		exit 1
 }
 
