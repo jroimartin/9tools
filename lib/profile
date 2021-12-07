@@ -1,0 +1,3 @@
+fn gotip {
+	$home/gotip/bin/go $*
+}

@@ -1,5 +1,7 @@
 #!/usr/bin/env rc
 
+if(test -f $home/lib/profile) . $home/lib/profile
+
 TERM=dumb
 PAGER=nobs
 SHELL=rc
