@@ -1,3 +1,8 @@
+TERM=dumb
+PAGER=nobs
+SHELL=rc
+EDITOR=editinacme
+
 fn gotip {
 	$home/gotip/bin/go $*
 }
